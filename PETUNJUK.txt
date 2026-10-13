@@ -1,0 +1,16 @@
+SATria Portfolio — website pribadi
+
+Isi folder:
+- index.html : struktur dan isi website
+- style.css  : desain, warna, tata letak, dan responsif
+
+Cara melihat:
+1. Buka index.html dengan browser untuk melihat pratinjau lokal.
+2. Untuk mengubah tulisan, edit index.html.
+3. Untuk mengubah desain, edit style.css.
+
+Catatan sebelum dipublikasikan:
+- Ganti huruf S pada area FOTO PROFIL dengan foto yang memang ingin dipublikasikan, bila diinginkan.
+- Periksa semua informasi pribadi sebelum website dibuat publik.
+- Jangan menampilkan alamat rumah, nomor pribadi, jadwal harian, atau data sensitif.
+- Google tidak menjamin situs langsung muncul setelah pendaftaran; situs perlu online dan dapat diindeks.

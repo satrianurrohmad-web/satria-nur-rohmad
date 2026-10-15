@@ -1,53 +1,26 @@
-const menuButton = document.getElementById('menuButton');
-const navigation = document.getElementById('navigation');
-const themeButton = document.getElementById('themeButton');
-const lightbox = document.getElementById('lightbox');
-const lightboxImage = document.getElementById('lightboxImage');
-const lightboxCaption = document.getElementById('lightboxCaption');
-
-menuButton.addEventListener('click', () => {
-  const opened = navigation.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', String(opened));
-  menuButton.setAttribute('aria-label', opened ? 'Tutup menu' : 'Buka menu');
-  menuButton.textContent = opened ? '×' : '☰';
-});
-navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-  navigation.classList.remove('open');
-  menuButton.setAttribute('aria-expanded', 'false');
-  menuButton.setAttribute('aria-label', 'Buka menu');
-  menuButton.textContent = '☰';
-}));
-themeButton.addEventListener('click', () => {
-  document.body.classList.toggle('light-mode');
-  themeButton.textContent = document.body.classList.contains('light-mode') ? '☾' : '☼';
-});
+const menuToggle = document.getElementById('menuToggle');
+const nav = document.getElementById('nav');
+menuToggle.addEventListener('click', () => nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => nav.classList.remove('open')));
 document.getElementById('year').textContent = new Date().getFullYear();
 
-document.querySelectorAll('.gallery-card[data-full]').forEach(card => card.addEventListener('click', () => {
-  lightboxImage.src = card.dataset.full;
-  lightboxImage.alt = card.querySelector('img').alt;
-  lightboxCaption.textContent = card.dataset.caption || '';
-  lightbox.showModal();
+const options = [...document.querySelectorAll('#quizOptions button')];
+const feedback = document.getElementById('quizFeedback');
+const reset = document.getElementById('resetQuiz');
+options.forEach(button => button.addEventListener('click', () => {
+  options.forEach(item => item.disabled = true);
+  if (button.dataset.answer === '10') {
+    button.classList.add('correct');
+    feedback.textContent = 'Hebat! 🎉 Benar, Dasa Dharma Pramuka terdiri dari 10 butir. Salam Pramuka!';
+  } else {
+    button.classList.add('wrong');
+    options.find(item => item.dataset.answer === '10').classList.add('correct');
+    feedback.textContent = 'Hampir! 😊 Jawaban yang benar adalah 10 butir. Yuk, hafalkan dan amalkan!';
+  }
+  reset.hidden = false;
 }));
-document.getElementById('lightboxClose').addEventListener('click', () => lightbox.close());
-lightbox.addEventListener('click', event => { if (event.target === lightbox) lightbox.close(); });
-lightbox.addEventListener('close', () => { lightboxImage.src = ''; });
-
-const sections = [...document.querySelectorAll('main section[id]')];
-const navLinks = [...navigation.querySelectorAll('a')];
-if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`));
-      }
-    });
-  }, { rootMargin: '-25% 0px -60% 0px' });
-  sections.forEach(section => observer.observe(section));
-  const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => {
-    if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); }
-  }), { threshold: 0.08 });
-  document.querySelectorAll('.section-heading, .story-main, .profile-card, .journey-card, .stat-card, .achievement-detail, .daily-card, .gallery-card, .motivation-panel, .closing-card').forEach(el => {
-    el.classList.add('reveal'); revealObserver.observe(el);
-  });
-}
+reset.addEventListener('click', () => {
+  options.forEach(item => { item.disabled = false; item.classList.remove('correct', 'wrong'); });
+  feedback.textContent = 'Pilih satu jawaban. Jangan lupa, Pramuka selalu siap!';
+  reset.hidden = true;
+});

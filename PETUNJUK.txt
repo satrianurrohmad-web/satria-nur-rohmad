@@ -1,16 +1,16 @@
-SATria Portfolio — website pribadi
+WEBSITE BERANDA DEWAN PRAMUKA SMPN 1 MALO
 
 Isi folder:
-- index.html : struktur dan isi website
-- style.css  : desain, warna, tata letak, dan responsif
+- index.html : halaman beranda
+- style.css  : desain dan background
+- script.js  : menu ponsel dan kuis interaktif
+- assets/    : foto-foto yang kamu kirim
 
-Cara melihat:
-1. Buka index.html dengan browser untuk melihat pratinjau lokal.
-2. Untuk mengubah tulisan, edit index.html.
-3. Untuk mengubah desain, edit style.css.
+CARA MEMAKAI:
+1. Ekstrak ZIP ini.
+2. Buka folder dewan_pramuka_website.
+3. Klik index.html untuk melihat beranda di browser.
+4. Untuk menggabungkan ke website lama, salin bagian halaman yang diperlukan ke proyekmu dan sesuaikan link navigasi.
+   File ini adalah beranda mandiri dan tidak menimpa website lamamu.
 
-Catatan sebelum dipublikasikan:
-- Ganti huruf S pada area FOTO PROFIL dengan foto yang memang ingin dipublikasikan, bila diinginkan.
-- Periksa semua informasi pribadi sebelum website dibuat publik.
-- Jangan menampilkan alamat rumah, nomor pribadi, jadwal harian, atau data sensitif.
-- Google tidak menjamin situs langsung muncul setelah pendaftaran; situs perlu online dan dapat diindeks.
+Catatan: Google Fonts membutuhkan koneksi internet; website dan foto tetap tampil tanpa font tersebut.

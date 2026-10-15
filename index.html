@@ -1,123 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#183b2b">
-  <meta name="description" content="Beranda Dewan Pramuka SMPN 1 Malo — cerita, kebersamaan, kegiatan, dan semangat Pramuka.">
-  <title>Dewan Pramuka | SMPN 1 Malo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090e20">
+  <meta name="description" content="Website pribadi Satria Nur Rohmad: cerita perjalanan belajar, prestasi, pengalaman sebagai Ketua OSIS, dan galeri dokumentasi.">
+  <meta name="author" content="Satria Nur Rohmad">
+  <meta property="og:title" content="Satria Nur Rohmad — Belajar, Memimpin, Berkarya">
+  <meta property="og:description" content="Kenali cerita, perjalanan prestasi, dan pengalaman Satria Nur Rohmad.">
+  <title>Satria Nur Rohmad | Belajar, Memimpin, Berkarya</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="paper-texture"></div>
-  <header class="topbar">
-    <a class="brand" href="#beranda" aria-label="Beranda Dewan Pramuka">
-      <span class="brand-mark">⚜</span>
-      <span><b>Dewan Pramuka</b><small>SMPN 1 MALO</small></span>
-    </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
-    <nav id="nav">
-      <a class="active" href="#beranda">⌂ Beranda</a>
-      <a href="#tentang">✦ Tentang</a>
-      <a href="#galeri">▧ Galeri</a>
-      <a href="#nilai">⚜ Nilai</a>
-      <a href="#kuis">✎ Kuis</a>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="header" id="top">
+    <a class="brand" href="#beranda" aria-label="Satria, ke beranda"><span class="brand-icon">S<span>.</span></span><span class="brand-name">Satria<span>Portfolio</span></span></a>
+    <button class="menu-button" id="menuButton" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="navigation" aria-label="Navigasi utama">
+      <a href="#beranda">Beranda</a><a href="#cerita">Cerita Saya</a><a href="#perjalanan">Perjalanan</a><a href="#prestasi">Prestasi</a><a href="#galeri">Galeri</a><a href="#motivasi">Motivasi</a>
     </nav>
+    <button class="theme-button" id="themeButton" aria-label="Ganti tema" title="Ganti tema">☼</button>
   </header>
-
   <main>
-    <section class="hero" id="beranda">
+    <section class="hero section" id="beranda">
       <div class="hero-copy">
-        <span class="eyebrow">⛺ SATU REGU, BANYAK CERITA</span>
-        <h1>Jejak Kecil,<br><em>Petualangan</em><br>Tak Terlupakan!</h1>
-        <p class="intro">Selamat datang di dunia Dewan Pramuka SMPN 1 Malo — tempat belajar memimpin, tumbuh bersama, dan mengubah pengalaman menjadi kenangan.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#galeri">Jelajahi Cerita <span>↘</span></a>
-          <a class="button secondary" href="#tentang">Kenali Kami</a>
-        </div>
-        <div class="mini-note"><span>✦</span> “Bukan sekadar memakai seragam, tetapi belajar menjadi pribadi yang siap membantu.”</div>
+        <p class="eyebrow"><span class="pulse"></span> WEBSITE PRIBADI • CERITA PERJALANAN</p>
+        <h1>Halo, aku <span class="gradient">Satria Nur Rohmad.</span></h1>
+        <p class="hero-lead">Seorang pelajar yang suka belajar, berorganisasi, dan mencoba hal baru.</p>
+        <p class="hero-text">Selamat datang di ruang kecilku di internet. Di sini aku berbagi perjalanan belajar, pengalaman memimpin, pencapaian yang kusyukuri, dan hal-hal yang ingin terus kukembangkan.</p>
+        <div class="hero-actions"><a class="btn primary" href="#cerita">Kenali ceritaku <span>↘</span></a><a class="btn secondary" href="#galeri">Lihat foto-foto <span>✦</span></a></div>
+        <div class="hero-signature"><span class="signature-line"></span> Belajar hari ini, bertumbuh untuk esok.</div>
       </div>
-      <div class="hero-art">
-        <div class="sun"></div><div class="mountain m1"></div><div class="mountain m2"></div>
-        <div class="floating-tag tag-top">⚜ SATYA & DARMA</div>
-        <figure class="main-photo">
-          <img src="assets/pelantikan.jpg" alt="Satria dalam seragam Pramuka memegang banner Pramuka">
-          <figcaption><span>CATATAN PERJALANAN</span><b>Berani mencoba, siap bertumbuh.</b></figcaption>
-        </figure>
-        <div class="sticker">SALAM<br><strong>PRAMUKA!</strong> ✌</div>
-        <div class="camp-doodle">✦</div>
-        <div class="ground"></div>
+      <div class="hero-photo-wrap">
+        <div class="photo-orbit orbit-one"></div><div class="photo-orbit orbit-two"></div>
+        <figure class="hero-photo glass"><img src="images/gedung-paripurna-dprd.jpg" alt="Satria di depan Gedung Paripurna DPRD Bojonegoro"><figcaption><span class="photo-kicker">SALAH SATU MOMEN PERJALANAN</span><strong>Berani mencoba, siap belajar.</strong></figcaption></figure>
+        <div class="float-tag tag-top">✦ Curious mind</div><div class="float-tag tag-bottom"><span class="green-dot"></span> Terus berkembang</div>
       </div>
-      <div class="side-label">BERANI • DISIPLIN • PEDULI</div>
+    </section>
+    <section class="quick-strip section" aria-label="Tiga nilai yang kupegang"><div class="quick-item"><span>01</span><div><strong>Belajar</strong><small>Selalu ingin memahami hal baru</small></div></div><div class="quick-item"><span>02</span><div><strong>Bertanggung jawab</strong><small>Berusaha memberi contoh lewat tindakan</small></div></div><div class="quick-item"><span>03</span><div><strong>Berkarya</strong><small>Mengubah ide menjadi pengalaman</small></div></div></section>
+
+    <section class="section content" id="cerita">
+      <div class="section-heading"><p class="eyebrow">01 / CERITA SAYA</p><h2>Perjalanan kecil yang terus <span class="gradient">bertumbuh.</span></h2><p>Setiap orang punya perjalanan masing-masing. Ini sebagian cerita tentang diriku, hal yang kusukai, dan nilai yang ingin kujaga.</p></div>
+      <div class="story-grid">
+        <article class="glass story-main"><span class="story-mark">“</span><h3>Senang belajar dan terus mencoba</h3>
+          <p>Namaku <strong>Satria Nur Rohmad</strong>. Aku adalah pelajar yang menikmati proses belajar, menyelesaikan tantangan, dan mencoba pengalaman baru. Bagiku, sekolah bukan hanya tempat mendapatkan nilai, tetapi juga tempat belajar bekerja sama, melatih keberanian, dan mengenali kemampuan diri.</p>
+          <p>Sejak kelas 3 SD, aku berusaha menjaga prestasi akademik dan terus belajar dengan sungguh-sungguh. Aku bersyukur pernah mendapat berbagai kesempatan mengikuti lomba dan mengumpulkan pengalaman yang berharga. Setiap pencapaian mengingatkanku bahwa usaha, latihan, dan kemauan untuk memperbaiki diri itu penting.</p>
+          <p>Aku juga dipercaya menjadi <strong>Ketua OSIS</strong>. Pengalaman ini mengajarkanku bahwa memimpin bukan sekadar memberi arahan. Pemimpin perlu memberi contoh, mendengarkan orang lain, bekerja sama, dan berani bertanggung jawab ketika menghadapi tantangan.</p>
+          <p>Aku tertarik pada teknologi dan belajar membuat website menggunakan HTML, CSS, serta JavaScript. Aku juga menyukai dunia kereta api. Aku ingin terus menambah ilmu, memperluas pengalaman, dan membuat hal yang kupelajari menjadi sesuatu yang bermanfaat.</p>
+          <div class="story-signoff"><span class="signoff-icon">✦</span><div><strong>Senang berkenalan!</strong><small>Terima kasih sudah membaca ceritaku.</small></div></div>
+        </article>
+        <aside class="story-side">
+          <article class="glass profile-card"><p class="mini-label">KENALAN LEBIH DEKAT</p><h3>Satria, dalam beberapa hal.</h3><div class="profile-row"><span>🎓</span><div><strong>Fokus saat ini</strong><small>Belajar dan kegiatan sekolah</small></div></div><div class="profile-row"><span>🚆</span><div><strong>Minat</strong><small>Kereta api dan teknologi</small></div></div><div class="profile-row"><span>📚</span><div><strong>Hobi</strong><small>Membaca, memancing, dan belajar hal baru</small></div></div><div class="profile-row"><span>🍜</span><div><strong>Makanan favorit</strong><small>Mie ayam</small></div></div><div class="profile-row"><span>🥤</span><div><strong>Minuman favorit</strong><small>Es teh</small></div></div></article>
+          <article class="glass mini-quote"><span>✧</span><p>“Tidak harus langsung sempurna. Yang penting mau belajar, berusaha, dan memperbaiki diri.”</p></article>
+        </aside>
+      </div>
     </section>
 
-    <section class="welcome strip" id="tentang">
-      <div class="section-icon">⚜</div>
-      <div>
-        <p class="eyebrow">SALAM PRAMUKA!</p>
-        <h2>Lebih dari kegiatan,<br><em>ini tentang kebersamaan.</em></h2>
+    <section class="section content" id="perjalanan">
+      <div class="section-heading"><p class="eyebrow">02 / PERJALANAN</p><h2>Langkah demi langkah, <span class="gradient">jadi pengalaman.</span></h2><p>Beberapa bagian penting dalam perjalananku sejauh ini. Ini bukan akhir, melainkan bagian dari proses yang masih terus berjalan.</p></div>
+      <div class="journey-list">
+        <article class="journey-card glass"><div class="journey-number">01</div><div><span class="journey-tag">MASA SEKOLAH DASAR</span><h3>Belajar membangun kebiasaan</h3><p>Sejak kelas 3 SD, aku berusaha mempertahankan prestasi akademik. Dari proses itu, aku belajar bahwa kebiasaan belajar dan ketekunan perlu dijaga setiap hari.</p></div><span class="journey-symbol">📘</span></article>
+        <article class="journey-card glass"><div class="journey-number">02</div><div><span class="journey-tag">LOMBA & KOMPETISI</span><h3>Mencoba kemampuan di luar kelas</h3><p>Aku mengikuti beragam kompetisi, mulai dari bidang akademik, cerdas cermat, PAI, IPA, hingga coding dan keterampilan lainnya. Setiap lomba memberi pengalaman yang berbeda.</p></div><span class="journey-symbol">🏆</span></article>
+        <article class="journey-card glass"><div class="journey-number">03</div><div><span class="journey-tag">KEPEMIMPINAN</span><h3>Belajar menjadi Ketua OSIS</h3><p>Menjadi Ketua OSIS memberiku kesempatan untuk belajar mengoordinasikan kegiatan, bekerja bersama pengurus, menyampaikan pendapat dengan jelas, dan menjadi contoh yang baik.</p></div><span class="journey-symbol">🤝</span></article>
+        <article class="journey-card glass"><div class="journey-number">04</div><div><span class="journey-tag">TEKNOLOGI</span><h3>Membuat website pribadi</h3><p>Aku mulai belajar HTML, CSS, dan JavaScript untuk membangun ruang digital sendiri. Proyek ini menjadi latihan agar aku lebih memahami teknologi sambil mendokumentasikan perjalanan hidupku.</p></div><span class="journey-symbol">💻</span></article>
       </div>
-      <p class="welcome-text">Di setiap latihan, kegiatan, dan tantangan, ada pelajaran tentang tanggung jawab, kekompakan, serta keberanian untuk terus belajar. Inilah cerita kami sebagai bagian dari Dewan Pramuka SMPN 1 Malo.</p>
+      <div class="note-panel glass"><span>🌱</span><p><strong>Catatan perjalanan:</strong> aku masih terus belajar. Ada hal yang sudah berhasil, ada pula yang masih perlu diperbaiki. Keduanya sama-sama bagian dari proses bertumbuh.</p></div>
     </section>
 
-    <section class="gallery-section" id="galeri">
-      <div class="section-heading">
-        <div><p class="eyebrow">ALBUM PETUALANGAN</p><h2>Potongan cerita <em>kami</em></h2></div>
-        <p>Setiap foto menyimpan cerita.<br>Setiap cerita punya pelajaran.</p>
+    <section class="section content" id="prestasi">
+      <div class="section-heading"><p class="eyebrow">03 / JEJAK PRESTASI</p><h2>Bangga pada proses, <span class="gradient">tetap rendah hati.</span></h2><p>Prestasi bukan hanya tentang piala. Di baliknya ada latihan, keberanian mencoba, dukungan, kerja sama, dan pelajaran yang dibawa pulang.</p></div>
+      <div class="stats-grid"><article class="stat-card glass"><span class="stat-icon">🏆</span><strong>15+</strong><span>piala dari berbagai kompetisi</span></article><article class="stat-card glass"><span class="stat-icon">📜</span><strong>6</strong><span>sertifikat yang pernah dikumpulkan</span></article><article class="stat-card glass"><span class="stat-icon">🥇</span><strong>#1</strong><span>peringkat 1 kelas VIII semester ganjil 2025–2026</span></article><article class="stat-card glass"><span class="stat-icon">💻</span><strong>Ruby</strong><span>Juara 1 tantangan koding tahun 2025</span></article></div>
+      <div class="achievement-detail-grid">
+        <article class="glass achievement-detail"><img src="images/juara-umum-kelas-8.jpg" alt="Piagam peringkat pertama kelas VIII" loading="lazy"><div><span class="journey-tag">AKADEMIK</span><h3>Peringkat 1 kelas VIII</h3><p>Penghargaan akademik semester ganjil tahun ajaran 2025–2026. Pencapaian ini menjadi pengingat untuk terus belajar dan tidak cepat puas.</p></div></article>
+        <article class="glass achievement-detail"><img src="images/juara-coding-ruby.jpg" alt="Piala Juara 1 kategori Ruby dalam lomba coding" loading="lazy"><div><span class="journey-tag">TEKNOLOGI</span><h3>Juara 1 Coding — Ruby</h3><p>Meraih penghargaan kategori Ruby dalam Tantangan Koding MGMP Informatika KKG SMP Kabupaten Bojonegoro tahun 2025.</p></div></article>
+        <article class="glass achievement-detail"><img src="images/ketua-osis.jpg" alt="Dokumentasi pengumuman Ketua OSIS masa bakti 2025–2026" loading="lazy"><div><span class="journey-tag">KEPEMIMPINAN</span><h3>Ketua OSIS 2025–2026</h3><p>Kesempatan untuk belajar memimpin, melayani, berkomunikasi, dan menjalankan tanggung jawab bersama pengurus lainnya.</p></div></article>
       </div>
-      <div class="photo-grid">
-        <article class="photo-card card-large">
-          <img src="assets/dewan-pramuka.jpg" alt="Foto bersama Dewan Pramuka SMPN 1 Malo">
-          <div class="photo-caption"><span>01 / KEBERSAMAAN</span><h3>Satu keluarga, satu semangat</h3><p>Belajar saling mendukung dan tumbuh bersama.</p></div>
-        </article>
-        <article class="photo-card card-tilt">
-          <img src="assets/satria-pramuka.jpg" alt="Satria mengenakan atribut Pramuka">
-          <div class="photo-caption"><span>02 / PERJALANAN</span><h3>Langkah seorang Pramuka</h3><p>Berproses menjadi lebih baik, satu hari demi satu hari.</p></div>
-        </article>
-        <article class="photo-card">
-          <img src="assets/bersama-regu.jpg" alt="Satria bersama teman-teman berseragam Pramuka">
-          <div class="photo-caption"><span>03 / PERSAUDARAAN</span><h3>Kompak dalam perbedaan</h3><p>Kerja sama membuat tantangan terasa lebih ringan.</p></div>
-        </article>
-        <article class="photo-card card-wide">
-          <img src="assets/kegiatan-alam.jpg" alt="Kegiatan Pramuka bersama di alam terbuka">
-          <div class="photo-caption"><span>04 / BELAJAR DI ALAM</span><h3>Alam adalah ruang belajar</h3><p>Menjaga lingkungan, melatih kemandirian, dan menikmati proses.</p></div>
-        </article>
-      </div>
-      <p class="gallery-footnote">📌 Foto-foto kegiatan Pramuka — kenangan yang akan terus diceritakan.</p>
+      <p class="small-note">Daftar dan angka di atas mengikuti informasi yang pernah Satria bagikan. Foto serta dokumentasi lainnya bisa dilihat di galeri.</p>
     </section>
 
-    <section class="values" id="nilai">
-      <div class="values-heading"><p class="eyebrow">BEKAL DALAM SETIAP LANGKAH</p><h2>Nilai yang kami bawa <em>ke mana saja</em></h2></div>
-      <div class="value-list">
-        <div class="value"><span>01</span><div><b>Disiplin</b><small>Menepati waktu dan bertanggung jawab atas pilihan.</small></div><i>⏱</i></div>
-        <div class="value"><span>02</span><div><b>Gotong royong</b><small>Saling membantu, bukan berjalan sendirian.</small></div><i>🤝</i></div>
-        <div class="value"><span>03</span><div><b>Berani belajar</b><small>Berani mencoba, tidak malu memperbaiki diri.</small></div><i>🧭</i></div>
-        <div class="value"><span>04</span><div><b>Peduli sesama</b><small>Siap menolong dengan hati yang tulus.</small></div><i>♡</i></div>
-      </div>
-      <div class="camp-quote">“Jadilah Pramuka yang bukan hanya tahu jalan,<br>tetapi juga mau membantu orang lain menemukannya.” <span>— Catatan perjalanan kami</span></div>
+    <section class="section content" id="keseharian">
+      <div class="section-heading"><p class="eyebrow">04 / KESEHARIAN</p><h2>Menjalani hari dengan <span class="gradient">tujuan kecil.</span></h2><p>Hari-hariku tidak selalu sama. Aku berusaha membagi waktu untuk sekolah, keluarga, ibadah, belajar, istirahat, dan hobi.</p></div>
+      <div class="daily-grid"><article class="glass daily-card"><span>🌅</span><h3>Memulai hari</h3><p>Bersiap menjalani kegiatan, menjaga kedisiplinan, dan berangkat sekolah dengan harapan bisa belajar sesuatu yang baru.</p></article><article class="glass daily-card"><span>🎒</span><h3>Di sekolah</h3><p>Mengikuti pelajaran, berdiskusi dengan teman, dan menjalankan tanggung jawab sebagai pelajar serta Ketua OSIS.</p></article><article class="glass daily-card"><span>📚</span><h3>Belajar kembali</h3><p>Mengulang pelajaran atau mencoba keterampilan baru agar pemahaman semakin baik.</p></article><article class="glass daily-card"><span>🌙</span><h3>Menutup hari</h3><p>Meluangkan waktu untuk beristirahat, menyiapkan kebutuhan esok hari, dan mengambil pelajaran dari kegiatan hari ini.</p></article></div>
+      <p class="small-note">Bagian ini menggambarkan kebiasaan umum, bukan jadwal pasti setiap hari.</p>
     </section>
 
-    <section class="quiz-section" id="kuis">
-      <div class="quiz-decoration">✦ ⚜ ✦</div>
-      <p class="eyebrow">UJI INGATANMU, PRAMUKA!</p>
-      <h2>Siap menerima <em>tantangan?</em></h2>
-      <p class="quiz-question">Dasa Dharma Pramuka terdiri dari berapa butir?</p>
-      <div class="quiz-options" id="quizOptions">
-        <button data-answer="8">8 butir</button>
-        <button data-answer="10">10 butir</button>
-        <button data-answer="12">12 butir</button>
+    <section class="section content" id="galeri">
+      <div class="section-heading"><p class="eyebrow">05 / GALERI FOTO</p><h2>Foto yang menyimpan <span class="gradient">cerita.</span></h2><p>Foto-foto asli yang pernah Satria kirimkan. Ketuk foto untuk melihatnya dalam ukuran lebih besar.</p></div>
+      <div class="gallery-grid">
+        <button class="gallery-card glass gallery-wide" data-full="images/koleksi-piala.jpg" data-caption="Koleksi piala — pengingat atas usaha dan pengalaman yang telah dilalui."><img src="images/koleksi-piala.jpg" alt="Koleksi piala Satria" loading="lazy"><span class="gallery-caption"><small>PERJALANAN PRESTASI</small><strong>Koleksi Piala</strong><span>Berbagai pencapaian dari waktu ke waktu ↗</span></span></button>
+        <button class="gallery-card glass" data-full="images/cerdas-cermat-1.jpg" data-caption="Kompetisi cerdas cermat — pengalaman belajar dan berjuang bersama tim."><img src="images/cerdas-cermat-1.jpg" alt="Foto tim juara dalam kompetisi cerdas cermat" loading="lazy"><span class="gallery-caption"><small>KOMPETISI</small><strong>Cerdas Cermat</strong><span>Belajar bersama tim ↗</span></span></button>
+        <button class="gallery-card glass" data-full="images/cerdas-cermat-2.jpg" data-caption="Fun Games Competition — pengalaman berkompetisi dan bekerja sama."><img src="images/cerdas-cermat-2.jpg" alt="Foto kelompok pada Fun Games Competition" loading="lazy"><span class="gallery-caption"><small>KERJA SAMA</small><strong>Fun Games Competition</strong><span>Kompak dan berusaha ↗</span></span></button>
+        <button class="gallery-card glass" data-full="images/ketua-osis.jpg" data-caption="Dokumentasi pengumuman Ketua OSIS masa bakti 2025–2026."><img src="images/ketua-osis.jpg" alt="Poster pengumuman Satria sebagai Ketua OSIS" loading="lazy"><span class="gallery-caption"><small>KEPEMIMPINAN</small><strong>Ketua OSIS</strong><span>Belajar memberi teladan ↗</span></span></button>
+        <button class="gallery-card glass" data-full="images/juara-coding-ruby.jpg" data-caption="Piala Juara 1 kategori Ruby dalam tantangan koding tahun 2025."><img src="images/juara-coding-ruby.jpg" alt="Piala juara satu coding kategori Ruby" loading="lazy"><span class="gallery-caption"><small>TEKNOLOGI</small><strong>Juara 1 Coding — Ruby</strong><span>Belajar lewat tantangan ↗</span></span></button>
+        <button class="gallery-card glass" data-full="images/gedung-paripurna-dprd.jpg" data-caption="Satria di depan Gedung Paripurna DPRD Bojonegoro — salah satu dokumentasi perjalanan."><img src="images/gedung-paripurna-dprd.jpg" alt="Satria di depan Gedung Paripurna DPRD Bojonegoro" loading="lazy"><span class="gallery-caption"><small>PENGALAMAN</small><strong>Gedung Paripurna DPRD</strong><span>Satu momen perjalanan ↗</span></span></button>
+        <button class="gallery-card glass" data-full="images/juara-umum-kelas-8.jpg" data-caption="Piagam peringkat pertama kelas VIII semester ganjil tahun ajaran 2025–2026."><img src="images/juara-umum-kelas-8.jpg" alt="Piagam peringkat satu kelas VIII" loading="lazy"><span class="gallery-caption"><small>AKADEMIK</small><strong>Peringkat 1 Kelas VIII</strong><span>Hasil usaha belajar ↗</span></span></button>
+        <button class="gallery-card glass" data-full="images/satria-usia-11-tahun.png" data-caption="Foto kenangan Satria saat berusia sekitar 11 tahun bersama piala-pialanya."><img src="images/satria-usia-11-tahun.png" alt="Foto kenangan Satria saat berusia sekitar 11 tahun bersama piala" loading="lazy"><span class="gallery-caption"><small>KENANGAN</small><strong>Awal Perjalanan</strong><span>Langkah kecil yang berarti ↗</span></span></button>
       </div>
-      <p id="quizFeedback" class="quiz-feedback" aria-live="polite">Pilih satu jawaban. Jangan lupa, Pramuka selalu siap!</p>
-      <button class="reset-quiz" id="resetQuiz" hidden>Coba lagi ↻</button>
     </section>
+
+    <section class="section content" id="motivasi">
+      <div class="section-heading"><p class="eyebrow">06 / MOTIVASI</p><h2>Prinsip yang ingin <span class="gradient">kupegang.</span></h2><p>Perjalanan ini masih panjang. Ada beberapa hal yang ingin selalu kuingat.</p></div>
+      <div class="motivation-panel glass"><span class="quote-mark">“</span><blockquote>Prestasi bukan alasan untuk merasa paling hebat, melainkan pengingat agar terus belajar, tetap rendah hati, dan bermanfaat bagi orang lain.</blockquote><p>— Prinsip yang ingin dipegang Satria</p><div class="motivation-pills"><span>Rendah hati</span><span>Disiplin</span><span>Berani mencoba</span><span>Bertanggung jawab</span></div></div>
+    </section>
+    <section class="closing section"><div class="closing-card glass"><span class="closing-star">✦</span><p class="eyebrow">TERIMA KASIH SUDAH BERKUNJUNG</p><h2>Perjalananku masih <span class="gradient">berlanjut.</span></h2><p>Semoga cerita ini bisa menjadi pengingat untuk terus berusaha, saling mendukung, dan tidak berhenti belajar.</p><a class="btn primary" href="#beranda">Kembali ke atas ↑</a></div></section>
   </main>
-
-  <footer>
-    <div class="footer-mark">⚜</div>
-    <div><b>Dewan Pramuka SMPN 1 Malo</b><p>Satya ku kudarmakan, Darma ku baktikan.</p></div>
-    <a href="#beranda">Kembali ke atas ↑</a>
-    <small>Dirangkai dengan semangat persaudaraan • © <span id="year"></span></small>
-  </footer>
+  <footer class="footer"><a class="brand" href="#beranda"><span class="brand-icon">S<span>.</span></span><span class="brand-name">Satria<span>Portfolio</span></span></a><p>Dibuat dengan semangat belajar dan berkembang.</p><span>© <span id="year"></span> Satria Nur Rohmad</span></footer>
+  <dialog class="lightbox" id="lightbox"><button class="lightbox-close" id="lightboxClose" aria-label="Tutup foto">×</button><img id="lightboxImage" src="" alt=""><p id="lightboxCaption"></p></dialog>
   <script src="script.js"></script>
 </body>
 </html>
